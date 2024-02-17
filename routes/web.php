@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    session()->flash('success', 'Welcome to Blade UI Kit');
     return view('welcome');
 });
 
